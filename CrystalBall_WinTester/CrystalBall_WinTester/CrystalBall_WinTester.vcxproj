@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EDFC05CC-0F47-42D5-80EF-E678EC513FE4}</ProjectGuid>
+    <RootNamespace>CrystalBall_WinTester</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\EngineSrc\alphamat\3rdParty;$(SolutionDir)..\EngineSrc\alphamat;$(SolutionDir)..\EngineSrc\filtering;$(SolutionDir)..\EngineSrc\vl;$(SolutionDir)..\EngineSrc;$(SolutionDir)include\ncnn;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)..\EngineSrc\alphamat\3rdParty;$(SolutionDir)..\EngineSrc\alphamat;$(SolutionDir)..\EngineSrc\filtering;$(SolutionDir)..\EngineSrc\vl;$(SolutionDir)..\EngineSrc;$(SolutionDir)include\ncnn;$(SolutionDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;USE_OPENCV;CPU_ONLY;_USE_MATH_DEFINES;_DEBUG;CUT_USE_DLLS;WINAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world341d.lib;ncnnd.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_MBCS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;WINAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_world341.lib;ncnn.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Engine_src\alphamat\cm.hpp" />
+    <ClInclude Include="..\..\Engine_src\alphamat\intraU.hpp" />
+    <ClInclude Include="..\..\Engine_src\alphamat\local_info.hpp" />
+    <ClInclude Include="..\..\Engine_src\alphamat\precomp.hpp" />
+    <ClInclude Include="..\..\Engine_src\common.h" />
+    <ClInclude Include="..\..\Engine_src\landmark68_dlib_lcl.h" />
+    <ClInclude Include="..\..\Engine_src\MagicEngine.h" />
+    <ClInclude Include="..\..\Engine_src\Matting.h" />
+    <ClInclude Include="..\..\Engine_src\morphing.h" />
+    <ClInclude Include="..\..\Engine_src\vl\aib.h" />
+    <ClInclude Include="..\..\Engine_src\vl\array.h" />
+    <ClInclude Include="..\..\Engine_src\vl\Calc.h" />
+    <ClInclude Include="..\..\Engine_src\vl\covdet.h" />
+    <ClInclude Include="..\..\Engine_src\vl\dsift.h" />
+    <ClInclude Include="..\..\Engine_src\vl\fastguidedfilter.h" />
+    <ClInclude Include="..\..\Engine_src\vl\fisher.h" />
+    <ClInclude Include="..\..\Engine_src\vl\generic.h" />
+    <ClInclude Include="..\..\Engine_src\vl\getopt_long.h" />
+    <ClInclude Include="..\..\Engine_src\vl\globalmatting.h" />
+    <ClInclude Include="..\..\Engine_src\vl\gmm.h" />
+    <ClInclude Include="..\..\Engine_src\vl\heap-def.h" />
+    <ClInclude Include="..\..\Engine_src\vl\hikmeans.h" />
+    <ClInclude Include="..\..\Engine_src\vl\hog.h" />
+    <ClInclude Include="..\..\Engine_src\vl\homkermap.h" />
+    <ClInclude Include="..\..\Engine_src\vl\host.h" />
+    <ClInclude Include="..\..\Engine_src\vl\ikmeans.h" />
+    <ClInclude Include="..\..\Engine_src\vl\imopv.h" />
+    <ClInclude Include="..\..\Engine_src\vl\imopv_sse2.h" />
+    <ClInclude Include="..\..\Engine_src\vl\kdtree.h" />
+    <ClInclude Include="..\..\Engine_src\vl\kmeans.h" />
+    <ClInclude Include="..\..\Engine_src\vl\lbp.h" />
+    <ClInclude Include="..\..\Engine_src\vl\liop.h" />
+    <ClInclude Include="..\..\Engine_src\vl\mathop.h" />
+    <ClInclude Include="..\..\Engine_src\vl\mathop_sse2.h" />
+    <ClInclude Include="..\..\Engine_src\vl\mser.h" />
+    <ClInclude Include="..\..\Engine_src\vl\nrutil.h" />
+    <ClInclude Include="..\..\Engine_src\vl\pgm.h" />
+    <ClInclude Include="..\..\Engine_src\vl\qsort-def.h" />
+    <ClInclude Include="..\..\Engine_src\vl\quickshift.h" />
+    <ClInclude Include="..\..\Engine_src\vl\random.h" />
+    <ClInclude Include="..\..\Engine_src\vl\rodrigues.h" />
+    <ClInclude Include="..\..\Engine_src\vl\scalespace.h" />
+    <ClInclude Include="..\..\Engine_src\vl\shuffle-def.h" />
+    <ClInclude Include="..\..\Engine_src\vl\sift.h" />
+    <ClInclude Include="..\..\Engine_src\vl\slic.h" />
+    <ClInclude Include="..\..\Engine_src\vl\stringop.h" />
+    <ClInclude Include="..\..\Engine_src\vl\svm.h" />
+    <ClInclude Include="..\..\Engine_src\vl\svmdataset.h" />
+    <ClInclude Include="..\..\Engine_src\vl\vlad.h" />
+    <ClInclude Include="..\..\Engine_src\vl\vl_header.h" />
+    <ClInclude Include="CrystalBall_WinTester.h" />
+    <ClInclude Include="CrystalBall_WinTesterDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Engine_src\alphamat\cm.cpp" />
+    <ClCompile Include="..\..\Engine_src\alphamat\infoflow.cpp" />
+    <ClCompile Include="..\..\Engine_src\alphamat\intraU.cpp" />
+    <ClCompile Include="..\..\Engine_src\alphamat\local_info.cpp" />
+    <ClCompile Include="..\..\Engine_src\common.cpp" />
+    <ClCompile Include="..\..\Engine_src\filtering\low_pass_filter.cc" />
+    <ClCompile Include="..\..\Engine_src\filtering\relative_velocity_filter.cc" />
+    <ClCompile Include="..\..\Engine_src\landmark68_dlib.cpp" />
+    <ClCompile Include="..\..\Engine_src\MagicEngine.cpp" />
+    <ClCompile Include="..\..\Engine_src\MattingThreeLayer.cpp" />
+    <ClCompile Include="..\..\Engine_src\morphing.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\aib.c" />
+    <ClCompile Include="..\..\Engine_src\vl\array.c" />
+    <ClCompile Include="..\..\Engine_src\vl\Calc.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\covdet.c" />
+    <ClCompile Include="..\..\Engine_src\vl\dsift.c" />
+    <ClCompile Include="..\..\Engine_src\vl\fastguidedfilter.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\fisher.c" />
+    <ClCompile Include="..\..\Engine_src\vl\generic.c" />
+    <ClCompile Include="..\..\Engine_src\vl\getopt_long.c" />
+    <ClCompile Include="..\..\Engine_src\vl\globalmatting.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\gmm.c" />
+    <ClCompile Include="..\..\Engine_src\vl\guided_filter.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\hikmeans.c" />
+    <ClCompile Include="..\..\Engine_src\vl\hog.c" />
+    <ClCompile Include="..\..\Engine_src\vl\homkermap.c" />
+    <ClCompile Include="..\..\Engine_src\vl\host.c" />
+    <ClCompile Include="..\..\Engine_src\vl\ikmeans.c" />
+    <ClCompile Include="..\..\Engine_src\vl\imopv.c" />
+    <ClCompile Include="..\..\Engine_src\vl\imopv_sse2.c" />
+    <ClCompile Include="..\..\Engine_src\vl\kdtree.c" />
+    <ClCompile Include="..\..\Engine_src\vl\kmeans.c" />
+    <ClCompile Include="..\..\Engine_src\vl\lbp.c" />
+    <ClCompile Include="..\..\Engine_src\vl\liop.c" />
+    <ClCompile Include="..\..\Engine_src\vl\mathop.c" />
+    <ClCompile Include="..\..\Engine_src\vl\mathop_sse2.c" />
+    <ClCompile Include="..\..\Engine_src\vl\mser.c" />
+    <ClCompile Include="..\..\Engine_src\vl\nrutil.cpp" />
+    <ClCompile Include="..\..\Engine_src\vl\pgm.c" />
+    <ClCompile Include="..\..\Engine_src\vl\quickshift.c" />
+    <ClCompile Include="..\..\Engine_src\vl\random.c" />
+    <ClCompile Include="..\..\Engine_src\vl\rodrigues.c" />
+    <ClCompile Include="..\..\Engine_src\vl\scalespace.c" />
+    <ClCompile Include="..\..\Engine_src\vl\sift.c" />
+    <ClCompile Include="..\..\Engine_src\vl\slic.c" />
+    <ClCompile Include="..\..\Engine_src\vl\stringop.c" />
+    <ClCompile Include="..\..\Engine_src\vl\svm.c" />
+    <ClCompile Include="..\..\Engine_src\vl\svmdataset.c" />
+    <ClCompile Include="..\..\Engine_src\vl\vlad.c" />
+    <ClCompile Include="..\..\Engine_src\vl\vl_kdtreebuild.cpp" />
+    <ClCompile Include="CrystalBall_WinTester.cpp" />
+    <ClCompile Include="CrystalBall_WinTesterDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalBall_WinTester.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Engine_src\vl\float.th" />
+    <None Include="..\..\Engine_src\vl\ikmeans_elkan.tc" />
+    <None Include="..\..\Engine_src\vl\ikmeans_init.tc" />
+    <None Include="..\..\Engine_src\vl\ikmeans_lloyd.tc" />
+    <None Include="res\CrystalBall_WinTester.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CrystalBall_WinTester.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CrystalBall_WinTester.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

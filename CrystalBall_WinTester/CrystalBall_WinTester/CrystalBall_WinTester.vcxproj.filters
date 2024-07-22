@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine_Src">
+      <UniqueIdentifier>{a5a4012b-247b-4b11-86cc-d3b309e78700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine_Src\vlkdtree">
+      <UniqueIdentifier>{7a2e10ac-d584-41aa-913b-cd565aa375d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine_Src\filtering">
+      <UniqueIdentifier>{fba10f48-3287-4876-8677-4cbf7e04e01f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine_Src\alphamat">
+      <UniqueIdentifier>{07308a02-1c2f-48c9-9e0b-76ec7025184c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CrystalBall_WinTester.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystalBall_WinTesterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\morphing.h">
+      <Filter>Engine_Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\common.h">
+      <Filter>Engine_Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\landmark68_dlib_lcl.h">
+      <Filter>Engine_Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\Matting.h">
+      <Filter>Engine_Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\alphamat\cm.hpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\alphamat\intraU.hpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\alphamat\local_info.hpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\alphamat\precomp.hpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\aib.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\array.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\Calc.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\covdet.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\dsift.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\fisher.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\generic.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\getopt_long.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\globalmatting.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\gmm.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\heap-def.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\hikmeans.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\hog.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\homkermap.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\host.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\ikmeans.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\imopv.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\imopv_sse2.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\kdtree.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\kmeans.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\lbp.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\liop.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\mathop.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\mathop_sse2.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\mser.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\nrutil.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\pgm.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\qsort-def.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\quickshift.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\random.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\rodrigues.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\scalespace.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\shuffle-def.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\sift.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\slic.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\stringop.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\svm.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\svmdataset.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\vl_header.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\vlad.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\MagicEngine.h">
+      <Filter>Engine_Src</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Engine_src\vl\fastguidedfilter.h">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CrystalBall_WinTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CrystalBall_WinTesterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\morphing.cpp">
+      <Filter>Engine_Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\common.cpp">
+      <Filter>Engine_Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\landmark68_dlib.cpp">
+      <Filter>Engine_Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\MattingThreeLayer.cpp">
+      <Filter>Engine_Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\alphamat\cm.cpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\alphamat\infoflow.cpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\alphamat\intraU.cpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\alphamat\local_info.cpp">
+      <Filter>Engine_Src\alphamat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\filtering\low_pass_filter.cc">
+      <Filter>Engine_Src\filtering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\filtering\relative_velocity_filter.cc">
+      <Filter>Engine_Src\filtering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\aib.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\array.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\Calc.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\covdet.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\dsift.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\fisher.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\generic.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\getopt_long.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\globalmatting.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\gmm.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\guided_filter.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\hikmeans.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\hog.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\homkermap.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\host.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\ikmeans.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\imopv.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\imopv_sse2.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\kdtree.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\kmeans.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\lbp.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\liop.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\mathop.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\mathop_sse2.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\mser.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\nrutil.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\pgm.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\quickshift.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\random.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\rodrigues.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\scalespace.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\sift.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\slic.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\stringop.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\svm.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\svmdataset.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\vl_kdtreebuild.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\vlad.c">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\MagicEngine.cpp">
+      <Filter>Engine_Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Engine_src\vl\fastguidedfilter.cpp">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalBall_WinTester.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CrystalBall_WinTester.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\Engine_src\vl\float.th">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </None>
+    <None Include="..\..\Engine_src\vl\ikmeans_elkan.tc">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </None>
+    <None Include="..\..\Engine_src\vl\ikmeans_init.tc">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </None>
+    <None Include="..\..\Engine_src\vl\ikmeans_lloyd.tc">
+      <Filter>Engine_Src\vlkdtree</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CrystalBall_WinTester.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
